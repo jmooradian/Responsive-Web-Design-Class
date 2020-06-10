@@ -1,0 +1,29 @@
+.navButton {
+    background-color: lawngreen;
+    padding: 11px 25px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.dropDownBox {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding: 20px;
+    margin-left: -45px;
+}
+
+.navButton:hover .dropDownBox {
+    display:block;
+}
+
+.dropDownBox .navButton {
+    background-color: cadetblue;
+}
+
+.dropDownBox .navButton:hover {
+    background-color: rgb(216,29,204);
+    transition-duration: 500ms;
+}
