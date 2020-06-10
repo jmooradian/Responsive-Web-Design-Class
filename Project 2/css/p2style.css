@@ -1,5 +1,4 @@
 html {
-    height: 100%;
 }
 
 body {
@@ -28,6 +27,7 @@ header {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
 }
 
 main {
@@ -122,10 +122,40 @@ p {
     font-family: 'Playfair Display', serif;
     padding: 11px 25px;
     border-radius: 4px;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.253);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.253);
 }
 
 a.myButton {
     display: inline-block;
     margin-top: 20px;
+}
+
+nav a.myButton {
+    margin-left: 30px;
+}
+
+.navButton {
+    color: white;
+    border: 1px solid white;
+    padding: 11px 25px;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.tbox {
+    width: 47%;
+    padding: 50px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.tbox p:last-of-type {
+    font-size: 0.8rem;
+    padding-left: 30px;
 }
