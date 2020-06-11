@@ -5,6 +5,11 @@ body {
     color: white;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 .container {
     min-height: 500px;
     max-width: 1024px;
@@ -29,39 +34,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-span {
-    font-weight: bold;
-}
-
-/* .logo {
-    text-align: left;
-}
-
-nav {
-    text-align: right;
-} */
-
-nav a {
-    text-decoration: none;
-    padding: 11px 25px;
-    border: 1px solid white;
-    margin-left: 20px;
-    color: white;
-}
-
-.footerContainer {
-    background-color: rgb(60,60,60);
-    min-height: 100px;
-    margin-top: 40px;
-}
-
-footer {
-    min-height: 100px;
-    max-width: 1024px;
-    background-color: blueviolet;
-    margin: 0 auto;
 }
 
 .col {
@@ -89,6 +61,21 @@ footer {
     font-weight: bold;
 }
 
+.navButton {
+    padding: 11px 25px;
+    border-width: 1px;
+    border-style: solid;
+    margin-left: 20px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.mobWrapper {
+    display: none;
+}
+/* -------------------------------------------------------------------------------- */
 /* Tablet View */
 @media (max-width: 768px){
     .col {
@@ -107,21 +94,44 @@ footer {
         position: relative;
     }
 
-    header {
+    /* header {
         display: block;
         text-align: center;
+    } */
+
+    nav {
+        display: none;
     }
 
-    nav a {
+    /* nav a {
         display: block;
         margin-left: 0px;
-    }
+    } */
 
     .logo {
         padding: 40px 0;
     }
-}
 
+    .mobWrapper {
+        display: block;
+        padding-right: 30px;
+    }
+
+    .mobNAV {
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+
+    .mobButton {
+        display: block;
+        background-color: coral;
+        padding: 15px 30px;
+        margin-left: -70px;
+        text-align: center;
+    }
+}
+/* -------------------------------------------------------------------------------- */
 /* Mobile View */
 @media (max-width: 400px){
     .col {
